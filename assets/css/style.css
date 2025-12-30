@@ -611,13 +611,12 @@ section {
 }
 
 .about .position {
-  font-weight: bold;
-  font-size: 1.0rem;
-  color: #FF5733; /* Vibrant color */
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds depth */
-  padding: 2px;
-  text-align: left; /* Left justify the name */
+  font-size: 1rem;
+  color: #ad2210; /* Dark contrasting color */
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: left; /* Left justify the affiliation */
 }
 
 
