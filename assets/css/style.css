@@ -536,13 +536,59 @@ section {
   background: url("../img/me.jpeg") center center no-repeat;
   background-size: cover;
   min-height: 300px;
-  width: 10%;
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0px 10px 30px; /* Adds depth with a shadow */
+  width: 100%; /* Changed from 10% to 100% */
+  max-width: 500px; /* Add max-width for larger screens */
+  margin: 0 auto; /* Center the image */
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
   position: relative;
-  overflow: hidden; /* Ensures that content inside doesn't overflow the rounded corners */
+  overflow: hidden;
 }
 
+.about .experience-image {
+  background: center center no-repeat;
+  background-size: contain;
+  min-height: 200px;
+  width: 100%; /* Changed from max-width to width */
+  max-width: 200px; /* Keep max-width for size limit */
+  margin: 0 auto; /* Center the image */
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add media queries for better responsiveness */
+@media (max-width: 768px) {
+  .about .image {
+    min-height: 250px;
+    max-width: 100%;
+  }
+  
+  .about .experience-image {
+    min-height: 150px;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about .image {
+    min-height: 200px;
+  }
+  
+  .about .experience-image {
+    min-height: 120px;
+    max-width: 120px;
+  }
+}
+
+.about .experience-image-1 {
+  background-image: url("../img/logo-pera.jpg");
+}
+
+.about .experience-image-2 {
+  background-image: url("../img/logo-purdue.jpg");
+}
 
 
 
