@@ -1658,7 +1658,7 @@ section {
 # Experience
 --------------------------------------------------------------*/
 .roles {
-  padding: 110px 0 40px;
+  padding: 110px 0 45px;
 }
 
 .roles-head {
@@ -1778,7 +1778,7 @@ section {
 # Adventures
 --------------------------------------------------------------*/
 .trips {
-  padding: 110px 0 50px;
+  padding: 110px 0 15px;
 }
 
 .trips-head {
@@ -1896,7 +1896,7 @@ section {
 # Contact page
 --------------------------------------------------------------*/
 .contact-page {
-  padding: 110px 0 60px;
+  padding: 110px 0 45px;
 }
 
 .contact-head {
@@ -1998,4 +1998,25 @@ section {
   .contact-grid {
     gap: 18px;
   }
+}
+
+
+/*--------------------------------------------------------------
+# Sticky footer
+# Keeps the footer at the bottom of the window on pages whose
+# content is shorter than the viewport, instead of leaving a band
+# of empty page below it.
+--------------------------------------------------------------*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body > #main {
+  flex: 1 0 auto;
+}
+
+body > #footer {
+  flex-shrink: 0;
 }
