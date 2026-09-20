@@ -1412,3 +1412,243 @@ section {
     margin-left: 12px;
   }
 }
+
+
+/*--------------------------------------------------------------
+# Publications
+--------------------------------------------------------------*/
+.pubs-intro {
+  padding: 110px 0 10px;
+}
+
+.pubs-intro h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #22272e;
+  margin-bottom: 10px;
+}
+
+.pubs-intro .pubs-lede {
+  font-size: 1rem;
+  color: #5a636c;
+  line-height: 1.7;
+  max-width: 760px;
+  margin-bottom: 16px;
+}
+
+.pubs-intro .pubs-lede strong {
+  color: #22272e;
+}
+
+.pubs-intro .pubs-actions {
+  margin: 0;
+}
+
+.pubs-intro .pubs-scholar {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid #d8dce1;
+  border-radius: 4px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #3b434a;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.pubs-intro .pubs-scholar:hover,
+.pubs-intro .pubs-scholar:focus {
+  background: #ffb727;
+  border-color: #ffb727;
+  color: #22272e;
+}
+
+.pubs {
+  padding: 30px 0 10px;
+}
+
+.pubs .pub-group-head {
+  padding-top: 26px;
+  border-top: 2px solid #eef0f2;
+  margin-bottom: 6px;
+}
+
+.pubs .pub-group-head h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #22272e;
+  line-height: 1.35;
+  margin-bottom: 6px;
+  text-transform: none;
+}
+
+.pubs .pub-group-head p {
+  font-size: 0.93rem;
+  color: #79828b;
+  margin: 0;
+}
+
+.pubs .pub-subhead {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #8a6d0b;
+  margin: 26px 0 10px;
+}
+
+.pubs .pub-list {
+  list-style: none;
+  counter-reset: pub;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.pubs .pub-item {
+  counter-increment: pub;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eef0f2;
+}
+
+.pubs .pub-item:last-child {
+  border-bottom: 0;
+}
+
+.pubs .pub-logo {
+  flex: 0 0 56px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+.pubs .pub-logo img {
+  max-width: 56px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.62;
+}
+
+.pubs .pub-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pubs .pub-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0 0 5px;
+}
+
+.pubs .pub-title::before {
+  content: counter(pub) ". ";
+  color: #a8b0b8;
+  font-weight: 600;
+}
+
+.pubs .pub-title a {
+  color: #22272e;
+  transition: color 0.2s ease;
+}
+
+.pubs .pub-title a:hover,
+.pubs .pub-title a:focus {
+  color: #b58a06;
+  text-decoration: underline;
+}
+
+.pubs .pub-authors {
+  font-size: 0.9rem;
+  color: #5a636c;
+  line-height: 1.6;
+  margin: 0 0 3px;
+}
+
+.pubs .pub-authors strong {
+  color: #22272e;
+  font-weight: 700;
+}
+
+.pubs .pub-venue {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: #79828b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pubs .pub-year {
+  font-style: normal;
+  font-weight: 600;
+  color: #5a636c;
+}
+
+.pubs .pub-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border: 1px solid #d8dce1;
+  border-radius: 10px;
+  background: #f4f6f8;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #5a636c;
+  vertical-align: 1px;
+}
+
+.pubs .pub-links {
+  margin: 7px 0 0;
+}
+
+.pubs .pub-links a {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #e0e4e8;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5a636c;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.pubs .pub-links a:hover,
+.pubs .pub-links a:focus {
+  background: #22272e;
+  border-color: #22272e;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  .pubs-intro {
+    padding-top: 90px;
+  }
+
+  .pubs-intro h1 {
+    font-size: 27px;
+  }
+
+  .pubs .pub-item {
+    gap: 12px;
+  }
+
+  .pubs .pub-logo {
+    flex-basis: 38px;
+  }
+
+  .pubs .pub-logo img {
+    max-width: 38px;
+    max-height: 30px;
+  }
+
+  .pubs .pub-group-head h2 {
+    font-size: 18px;
+  }
+}
