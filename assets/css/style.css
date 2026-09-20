@@ -1342,19 +1342,7 @@ section {
   font-size: 34px;
   font-weight: 700;
   color: #22272e;
-  margin-bottom: 10px;
-}
-
-.pubs-intro .pubs-lede {
-  font-size: 1rem;
-  color: #5a636c;
-  line-height: 1.7;
-  max-width: 760px;
-  margin-bottom: 16px;
-}
-
-.pubs-intro .pubs-lede strong {
-  color: #22272e;
+  margin-bottom: 18px;
 }
 
 .pubs-intro .pubs-actions {
