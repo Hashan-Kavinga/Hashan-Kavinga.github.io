@@ -1158,12 +1158,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/footer-bg.jpg") center center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 14px;
-  text-align: center;
-  padding: 10px 0;
+  padding: 0;
   position: relative;
 }
 
@@ -1174,61 +1173,63 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.62);
 }
 
-#footer .container {
+/* One compact row: name on the left, profile icons on the right. */
+#footer .footer-inner {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 52px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  position: relative;
+#footer .footer-name {
   font-family: "Satisfy", serif;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-
-#footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links {
-  margin: 0 0 40px 0;
-}
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #ffb727;
+  font-size: 19px;
+  line-height: 1.2;
   color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  margin: 0;
+}
+
+#footer .footer-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#footer .footer-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: #f3a200;
+  background: rgba(255, 255, 255, 0.14);
   color: #fff;
-  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-#footer .copyright {
-  margin: 0 0 5px 0;
+#footer .footer-links a:hover,
+#footer .footer-links a:focus {
+  background: #ffb727;
+  color: #22272e;
 }
 
-#footer .credits {
-  font-size: 13px;
+@media (max-width: 575px) {
+  #footer .footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    min-height: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .services .p-icon-box {
