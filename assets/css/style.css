@@ -1652,3 +1652,241 @@ section {
     font-size: 18px;
   }
 }
+
+
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+.roles {
+  padding: 110px 0 40px;
+}
+
+.roles-head {
+  margin-bottom: 34px;
+}
+
+.roles-head h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #22272e;
+  margin-bottom: 8px;
+}
+
+.roles-head p {
+  font-size: 1rem;
+  color: #79828b;
+  margin: 0;
+}
+
+.roles .role {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 28px 0;
+  border-top: 1px solid #eef0f2;
+}
+
+.roles .role-logo {
+  flex: 0 0 96px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.roles .role-logo img {
+  max-width: 96px;
+  max-height: 72px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.roles .role-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.roles .role-dates {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: #8a6d0b;
+  margin: 0 0 6px;
+}
+
+.roles .role-current {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 9px;
+  border-radius: 10px;
+  background: #ffb727;
+  color: #22272e;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+}
+
+.roles .role-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #22272e;
+  line-height: 1.3;
+  margin: 0 0 4px;
+  text-transform: none;
+}
+
+.roles .role-org {
+  font-size: 0.98rem;
+  color: #5a636c;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.roles .role-place {
+  color: #98a1aa;
+}
+
+.roles .role-text {
+  font-size: 0.97rem;
+  color: #3b434a;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 72ch;
+}
+
+.roles .role-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+.roles .role-courses li {
+  padding: 4px 12px;
+  border: 1px solid #e0e4e8;
+  border-radius: 3px;
+  background: #f8f9fa;
+  font-size: 12.5px;
+  color: #5a636c;
+}
+
+/*--------------------------------------------------------------
+# Adventures
+--------------------------------------------------------------*/
+.trips {
+  padding: 110px 0 50px;
+}
+
+.trips-head {
+  margin-bottom: 34px;
+}
+
+.trips-head h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #22272e;
+  margin-bottom: 8px;
+}
+
+.trips-head p {
+  font-size: 1rem;
+  color: #79828b;
+  margin: 0;
+}
+
+.trips .trip {
+  padding-top: 26px;
+  margin-bottom: 42px;
+  border-top: 1px solid #eef0f2;
+}
+
+.trips .trip-head {
+  margin-bottom: 16px;
+}
+
+.trips .trip-head h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #22272e;
+  margin: 0 0 3px;
+  text-transform: none;
+}
+
+.trips .trip-meta {
+  font-size: 0.92rem;
+  color: #79828b;
+  margin: 0;
+}
+
+.trips .trip-when {
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #d8dce1;
+  font-weight: 600;
+  color: #8a6d0b;
+}
+
+.trips .trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.trips .trip-photo {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #eef0f2;
+}
+
+.trips .trip-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.trips .trip-photo:hover img {
+  transform: scale(1.06);
+}
+
+@media (max-width: 575px) {
+  .roles,
+  .trips {
+    padding-top: 90px;
+  }
+
+  .roles-head h1,
+  .trips-head h1 {
+    font-size: 27px;
+  }
+
+  .roles .role {
+    gap: 16px;
+  }
+
+  .roles .role-logo {
+    flex-basis: 56px;
+  }
+
+  .roles .role-logo img {
+    max-width: 56px;
+    max-height: 46px;
+  }
+
+  .roles .role-title {
+    font-size: 1.12rem;
+  }
+
+  .trips .trip-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+}
