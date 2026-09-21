@@ -1388,7 +1388,7 @@ section {
 
 .pubs .pub-group-head p {
   font-size: 0.93rem;
-  color: #79828b;
+  color: #22272e;
   margin: 0;
 }
 
@@ -1470,7 +1470,7 @@ section {
 
 .pubs .pub-authors {
   font-size: 0.9rem;
-  color: #5a636c;
+  color: #22272e;
   line-height: 1.6;
   margin: 0 0 3px;
 }
@@ -1483,7 +1483,7 @@ section {
 .pubs .pub-venue {
   font-size: 0.88rem;
   font-style: italic;
-  color: #79828b;
+  color: #22272e;
   line-height: 1.6;
   margin: 0;
 }
@@ -1491,7 +1491,7 @@ section {
 .pubs .pub-year {
   font-style: normal;
   font-weight: 600;
-  color: #5a636c;
+  color: #22272e;
 }
 
 .pubs .pub-badge {
@@ -1520,7 +1520,7 @@ section {
   border-radius: 3px;
   font-size: 12px;
   font-weight: 600;
-  color: #5a636c;
+  color: #22272e;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -1555,6 +1555,159 @@ section {
 
   .pubs .pub-group-head h2 {
     font-size: 18px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Selected research projects
+--------------------------------------------------------------*/
+.projects {
+  padding: 30px 0 54px;
+}
+
+.projects .pub-group-head {
+  padding-top: 26px;
+  border-top: 2px solid #eef0f2;
+  margin-bottom: 24px;
+}
+
+.projects .pub-group-head h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #22272e;
+  line-height: 1.35;
+  margin-bottom: 6px;
+  text-transform: none;
+}
+
+.projects .pub-group-head p {
+  font-size: 0.93rem;
+  color: #22272e;
+  margin: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid #e7eaed;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(35, 44, 53, 0.06);
+}
+
+.project-card > img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
+  background: #171b20;
+}
+
+.project-card-body {
+  padding: 22px 24px 24px;
+}
+
+.project-status {
+  margin: 0 0 9px;
+  color: #8a6d0b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  margin: 0 0 11px;
+  color: #22272e;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.project-card p:not(.project-status) {
+  margin: 0;
+  color: #22272e;
+  font-size: 0.94rem;
+  line-height: 1.68;
+}
+
+.project-card .project-links {
+  margin-top: 14px !important;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #e0e4e8;
+  border-radius: 3px;
+  color: #22272e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.project-links a:hover,
+.project-links a:focus {
+  background: #22272e;
+  border-color: #22272e;
+  color: #fff;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+  margin: 17px 0 0;
+  padding: 0;
+}
+
+.project-tags li {
+  padding: 4px 9px;
+  border: 1px solid #e0e4e8;
+  border-radius: 3px;
+  background: #f8f9fa;
+  color: #22272e;
+  font-size: 11.5px;
+}
+
+.project-card-patent {
+  display: flex;
+  align-items: center;
+  border-top: 4px solid #ffb727;
+  background: #fffdf8;
+}
+
+.project-card-patent .project-card-body {
+  padding-top: 26px;
+}
+
+@media (max-width: 767px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575px) {
+  .projects {
+    padding-bottom: 38px;
+  }
+
+  .projects .pub-group-head h2 {
+    font-size: 18px;
+  }
+
+  .project-card > img {
+    height: 175px;
+  }
+
+  .project-card-body {
+    padding: 19px 20px 21px;
   }
 }
 
