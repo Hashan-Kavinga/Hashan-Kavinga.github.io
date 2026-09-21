@@ -1341,7 +1341,7 @@ section {
 .pubs-intro h1 {
   font-size: 34px;
   font-weight: 700;
-  color: #22272e;
+  color: #000;
   margin-bottom: 18px;
 }
 
@@ -1356,7 +1356,7 @@ section {
   border-radius: 4px;
   font-size: 0.92rem;
   font-weight: 600;
-  color: #3b434a;
+  color: #000;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -1364,7 +1364,7 @@ section {
 .pubs-intro .pubs-scholar:focus {
   background: #ffb727;
   border-color: #ffb727;
-  color: #22272e;
+  color: #000;
 }
 
 .pubs {
@@ -1380,7 +1380,7 @@ section {
 .pubs .pub-group-head h2 {
   font-size: 21px;
   font-weight: 700;
-  color: #22272e;
+  color: #000;
   line-height: 1.35;
   margin-bottom: 6px;
   text-transform: none;
@@ -1388,7 +1388,7 @@ section {
 
 .pubs .pub-group-head p {
   font-size: 0.93rem;
-  color: #22272e;
+  color: #000;
   margin: 0;
 }
 
@@ -1453,12 +1453,12 @@ section {
 
 .pubs .pub-title::before {
   content: counter(pub) ". ";
-  color: #a8b0b8;
+  color: #000;
   font-weight: 600;
 }
 
 .pubs .pub-title a {
-  color: #22272e;
+  color: #000;
   transition: color 0.2s ease;
 }
 
@@ -1470,20 +1470,20 @@ section {
 
 .pubs .pub-authors {
   font-size: 0.9rem;
-  color: #22272e;
+  color: #000;
   line-height: 1.6;
   margin: 0 0 3px;
 }
 
 .pubs .pub-authors strong {
-  color: #22272e;
+  color: #000;
   font-weight: 700;
 }
 
 .pubs .pub-venue {
   font-size: 0.88rem;
   font-style: italic;
-  color: #22272e;
+  color: #000;
   line-height: 1.6;
   margin: 0;
 }
@@ -1491,7 +1491,7 @@ section {
 .pubs .pub-year {
   font-style: normal;
   font-weight: 600;
-  color: #22272e;
+  color: #000;
 }
 
 .pubs .pub-badge {
@@ -1505,7 +1505,7 @@ section {
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.3px;
-  color: #5a636c;
+  color: #000;
   vertical-align: 1px;
 }
 
@@ -1520,7 +1520,7 @@ section {
   border-radius: 3px;
   font-size: 12px;
   font-weight: 600;
-  color: #22272e;
+  color: #000;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -1574,7 +1574,7 @@ section {
 .projects .pub-group-head h2 {
   font-size: 21px;
   font-weight: 700;
-  color: #22272e;
+  color: #000;
   line-height: 1.35;
   margin-bottom: 6px;
   text-transform: none;
@@ -1582,7 +1582,7 @@ section {
 
 .projects .pub-group-head p {
   font-size: 0.93rem;
-  color: #22272e;
+  color: #000;
   margin: 0;
 }
 
@@ -1624,7 +1624,7 @@ section {
 
 .project-card h3 {
   margin: 0 0 11px;
-  color: #22272e;
+  color: #000;
   font-size: 1.08rem;
   font-weight: 700;
   line-height: 1.4;
@@ -1632,7 +1632,7 @@ section {
 
 .project-card p:not(.project-status) {
   margin: 0;
-  color: #22272e;
+  color: #000;
   font-size: 0.94rem;
   line-height: 1.68;
 }
@@ -1646,7 +1646,7 @@ section {
   padding: 3px 10px;
   border: 1px solid #e0e4e8;
   border-radius: 3px;
-  color: #22272e;
+  color: #000;
   font-size: 12px;
   font-weight: 600;
 }
@@ -1672,7 +1672,7 @@ section {
   border: 1px solid #e0e4e8;
   border-radius: 3px;
   background: #f8f9fa;
-  color: #22272e;
+  color: #000;
   font-size: 11.5px;
 }
 
